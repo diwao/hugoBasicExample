@@ -9,6 +9,7 @@ enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
+enableEmoji = true
 
 [menu]
 
@@ -49,3 +50,20 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses=true
+
+[Params]
+ localeOgp = "ja"
+ description = "Web、ガジェット、仙台のお話"
+ keywords = "仙台,Mac,iPhone,Web,フロントエンド"
+ twitter = "_diwao"
+ github = "diwao"
+ facebook = "diwaocom"
+ googleanalytics = "UA-20153982-1"
+ googlecustomsearch = "005521619417461187932:88eccufvlbe"
